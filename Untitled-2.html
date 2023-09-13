@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация в Battle.net</title>
+    <link rel="icon" type="image/png" href="images\battlenet.png">
+</head>
+<body>
+    <div class="box">
+        <div class="bn-logo">
+            <img src="https://bnetaccount.akamaized.net/login/static/images/toolkit/defaults/logos/bnet/logo-horizontal-color-light.1z1fI.svg" alt="" style="width: 240px; height: 72px;">
+        </div>
+        <div class="autorizator">
+            <p><b>Авторизоваться</b></p>
+        </div>
+        <div class="grid1">
+            <a href="https://accounts.google.com/v3/signin/identifier?opparams=%253Fscheme%2526deviceProof%253Db6dd4e9c7224c8370db79f935a703f09020504b1fb9a3f133c13042da61b51d3%2526isMASDK%253Dfalse&dsh=S738763652%3A1694548754737918&client_id=196154489538-9rpkrg8u9qimu15c2p1gcas16qnocqrj.apps.googleusercontent.com&o2v=1&redirect_uri=https%3A%2F%2Feu.account.battle.net%2Flogin%2Fsignin%2Fgoogle&response_type=code&scope=openid+profile+email&service=lso&state=AZe2DjiQPDbLDQPp_BqEdpYIlr5TuT6vZ8tOVxMA8aAeuRlStiDce2jZRGBWF_e_Lo_oyceRexHGRPYZquRUfpryRBU1dDMT1NINXu1I3dXtnpAcKGMUTL6a3kAWD0MPf1d8bXVU9EUaiSf2_zQAKAMSFdG-4ZL1FX_siMsPtlyn6ZyIS5pBnO_v8YX1FcpUZBVMdTuwZwDylkpkUPw0fJPATYYl127wnhIKfhzGj0LfJMoSk-CvlEnyrFbETIAnjOxHdkpnP2HPbUk7Q1mdHTgoTZu4QBTynv34oWDsEZiDsfVKQTd3ek0Hcg9rnjX4sADHdxr3xCjxZnXV0eUFD78VQPFFxWANUA4AmCq0ZKQmMPrhmz4KKh7_3hCwVAJb3sZCHx7u_qfVT7J3FEo8FXBqnkZS8ol6-GjhHAmUrUJINJ5TalLoEj79tyoOSp21OTupDeRSTqKH7pelO9IQSdgqbPuU90foBo_hiKJ4iOSyzvLyzna4pCPeYQXYpCy9xVHjcoenpUTgkdCVNc2idf-j7UWQdC4QYfOpRq6DSXQqxx2c17KcohGxJBfgoZHAfeSuSE6UNKiJrdS-ffzHpU3Eo436SywlkqyGn23c2oFpM_2PVRd29iGVCHsN3h7OeUIS_H9ldYHsTxtuyHRiW_s%3D&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAMXJ35dw0ZmCdfCm9ugegnz6REECBLl9hGn79RwOgohzr-lxvIasgLHBSmNhePrrFmfqZAJ_ZN2WJbVRZddr9NmG9kIsLsS34Nz7e49ghKQ_ZOFB1yY3W5r_o3ldqME3dHfo8quRY3LYZVcvRaJRibfQ3YY8n904_cpeSnEKDuT76ahbYmhdnFXLsQ6C7baVOBXAog9FgMOye9aT9KgodJYGxG-_60NhooZ6AFSvNaS26jLEDS65Ruo9u01d8mGApFORiMJ7P7DQxFV4pL4MkUk0JZoIRn9dS0SveBVFmDGIq9CJd8gwSdLLDFJiv1WA8yLehs2qWxcsOfteKWY1yLwdYGuG9r4nhhYK7BG7jRv4mmivPt6z6aLcVk2qq5rtZk3eU0BgGIajPwWbDSLO_5e11pmGCbg5cBKYl3lDoCIN7wBFVFwVA3FknmhzeUrAExByT0_DQd-3qNkgJirFkI3H0mZIsKP9b9OqTN463_2_X_zJxU%26as%3DS738763652%253A1694548754737918%26client_id%3D196154489538-9rpkrg8u9qimu15c2p1gcas16qnocqrj.apps.googleusercontent.com%23&app_domain=https%3A%2F%2Feu.account.battle.net&rart=ANgoxcepfeeXz7_SISzfGWRLLKZwkDMLHvsDaKW1PUgU4H6y053FyRf4ROmtVvcweWBC2DqScr92Ev4roMKPMFz7PNPRbIy1gg">
+                <button class="google">
+                    <img src="images/googleFavicon.png" alt="" height="18px" width="18px">
+                </button>
+            </a>
+            <a href="https://www.facebook.com/v2.12/dialog/oauth?client_id=1173546789331741&response_type=code&state=AfHFaXCCMvUDEW39MTA3eFbq9nSzeSQ-mBy-preMYb8wbc-qDBP4oOTV-occZqjwz7vdrq_1X5ZL_g04YXAh1v0A7YPTwZrpDDtdLmdEIEgiFJfrYdvECZa6BFT2hicowQNwmYxKy9ieN2bS4onZCTQJ6JkZFYrzvt97l9XE1EM5o7JiciLsYr6qFgfznL32QVH4IgZxE-U1d34qUR0whzIllYBuodUtqmAMR2bxBYOA8dVbFOZJq-cBUGJYJ95jL3-B9P_qKgUp7dBDezYzujw%3D&scheme&deviceProof=c2c8708b2420327727cafbf4027be8aaab1925c77833250848b59c78ceddf6be&redirect_uri=https%3A%2F%2Feu.account.battle.net%2Flogin%2Fsignin%2Ffacebook&scope=public_profile+email+user_friends&isMASDK=false">
+                <button class="facebook">
+                    <img src="images/facebook-icon-white-png.png" alt="" height="18px" width="18px">
+                </button>
+            </a>
+            <a href="https://appleid.apple.com/auth/authorize?client_id=com.blizzard.login&response_type=code&state=Af1XK62X9F6OFnCk_45ScZYdZNtXahkh9ZQUeqqTw0vDG7dDhIH50nKSvNisYAcupJpbecVjYlNIM7OigvRbu-C2S75TexECrASMfZLoQiDaz2Xe3B5j_GeiIeyF_t1FzjsZEeTcfHtmj9Y3q17W7sJC0sVZpz17zQvqqYvomgpQsltcSAfT9MmCcegwbfML-Qz-DlaoeOpyZgWpt0mFu8Sby8AhY9S0DoBUwlILKc0I2B7ND2Wc8CoO7Go-xViebrTLeQdhjXGsvBa2j7i5frw%3D&response_mode=form_post&scheme&deviceProof=c2c8708b2420327727cafbf4027be8aaab1925c77833250848b59c78ceddf6be&redirect_uri=https%3A%2F%2Feu.account.battle.net%2Flogin%2Fsignin%2Fapple&scope=email+name&isMASDK=false">
+                <button class="apple">
+                    <img src="images/pngwing.com.png" alt="" height="17px" width="19px">
+                </button>
+            </a>
+        </div>
+        <div class="grid2">
+            <a href="https://login.live.com/oauth20_authorize.srf?client_id=000000004417E628&response_type=code&state=AWY0N4u3bpIXsw0vY-96dJt_c7bo5UpV6GXzR-eu2inCcW_mKYCv31fT3ww83dh7qs4BDKdtLDBHiz1cbhg01SEpW5SDG3isXxhkXZmgwIILg3tpce0IfvpBtN9KvHjXoI-o-jAL0BjoYxMvz6-YIB220RrMfLNKQaMElqMH3NuwA7INNuE6YLVqOckNs4ZsDuZqzfAUCxaY4T7HfZg_ULCjpfuJpihhRainbeJBCiQ7ewrc3WGikaYcRJuLBbWwPnDo08MbVO8dPp0iPQxRUBY%3D&scheme&deviceProof=c2c8708b2420327727cafbf4027be8aaab1925c77833250848b59c78ceddf6be&redirect_uri=https%3A%2F%2Feu.account.battle.net%2Flogin%2Fsignin%2Flive&scope=Xboxlive.signin&isMASDK=false">
+                <button class="xbox">
+                    <img src="images/xbox.png" alt="" height="18px" width="18px">
+                </button>
+            </a>
+            <a href="https://my.account.sony.com/central/signin/?client_id=b5b165c3-4146-4a8e-822b-1116fd3b96d0&response_type=code&state=AS4QgsJj3UmYzO85odXYYIp3vW6TSu9vgFyejpPSKPWHmwhbu4MVWchAGTyoYNrCC7niCZ6JomrsMiGjSGvssJBQCXfrFIM1cvkuGhhhkWR-0jk_U0E49zsLf847PvaevJpwsKiRXnZh8Y8M_FenI1dne-P2sbtOWlaMD4RWZupgfAX6iSp2Dz9FX-V9Dlko7mIwgue4x7k6t6tm_zIvbaLcQcZkyKUfxDcOAhtWo-XvkNl4LEK5odWQqZrR2PSoz74KMgectZND1Xgwfjmimc4%3D&scheme&deviceProof=c2c8708b2420327727cafbf4027be8aaab1925c77833250848b59c78ceddf6be&redirect_uri=https%3A%2F%2Feu.account.battle.net%2Flogin%2Fsignin%2Fpsn&scope=psn%3As2s&isMASDK=false&cid=d681699e-7116-403b-8706-4402a77a6349&error=login_required&error_code=4165&no_captcha=false#/signin/ca?entry=ca">
+                <button class="playstation">
+                    <img src="images/ps.png" alt="" height="18px" width="18px">
+                </button>
+            </a>
+            <a href="https://accounts.nintendo.com/authorize_guide?type=mixed&redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3D2b8f48e61685a62a%26deviceProof%3Dc2c8708b2420327727cafbf4027be8aaab1925c77833250848b59c78ceddf6be%26interacted%3D1%26isMASDK%3Dfalse%26redirect_uri%3Dhttps%253A%252F%252Feu.account.battle.net%252Flogin%252Fsignin%252Fnintendo%26response_type%3Dcode%26scheme%3D%26scope%3Dopenid%2Boffline%2Buser.basic%2Buser.email%26state%3DAckpo8dLcImUti6we-nDySxUWSq97x3W5lXK5O-qUiLYEnfvxjx6wSe7TN3bHJtYTv1XKKVdDyzbZTNIRyP0tlrNBvxXFWMQggsiYJI-MofhttchVMP20uiUEOFdkr6Ir0NTcOMIIJvGwguxm5bwQDSt1vDZUeO2zljzpWKMdaLXPxSAjSEYsI0sQThr4sd6IMSNga3sJjGWFeq9Zv_6EMn1k57lJPR4P8nLyntJkBKyBNuzAZwrLHQkO7YAbILqeKgqveRQHYZUuBd8GVQEV4Y%253D">
+                <button class="switch">
+                    <img src="images/switch.png" alt="" height="18px" width="18px">
+                </button>
+            </a>
+            <a href="https://steamcommunity.com/openid/loginform/?goto=%2Fopenid%2Flogin%3Fopenid.ns%3Dhttp%253A%252F%252Fspecs.openid.net%252Fauth%252F2.0%26openid.claimed_id%3Dhttp%253A%252F%252Fspecs.openid.net%252Fauth%252F2.0%252Fidentifier_select%26openid.identity%3Dhttp%253A%252F%252Fspecs.openid.net%252Fauth%252F2.0%252Fidentifier_select%26openid.return_to%3Dhttps%253A%252F%252Feu.account.battle.net%252Flogin%252Fsignin%252Fsteam%253Fstate%253DAYUDjGqKtlrjiCypPf9NY9aY4VxbxXR6bCcwjMNEt8fNK8BR2i4ytq4pLkfN9O7hI8z_a__W1fHVOy6A4wdbxDbpT48eurFtI8FjXNeF_h4QvvzB6DJ1i5M5grjKgrifWFmZy2EGuwyOTnQePgo9omwNhydwwUn9CNR50AtaBawfTtoFkoEHoJEla-ov-HJX4lbPmLs2A0eu38-t42zrHAuKMzKo45GX6hlVoMa9vSzI_WD_Nfr7hVs-wMixtTDRgJPZUN6g1KA_zQ7lImL4YrU%253D%26openid.realm%3Dhttps%253A%252F%252Feu.account.battle.net%252Flogin%252Fsignin%252Fsteam%253Fstate%253DAYUDjGqKtlrjiCypPf9NY9aY4VxbxXR6bCcwjMNEt8fNK8BR2i4ytq4pLkfN9O7hI8z_a__W1fHVOy6A4wdbxDbpT48eurFtI8FjXNeF_h4QvvzB6DJ1i5M5grjKgrifWFmZy2EGuwyOTnQePgo9omwNhydwwUn9CNR50AtaBawfTtoFkoEHoJEla-ov-HJX4lbPmLs2A0eu38-t42zrHAuKMzKo45GX6hlVoMa9vSzI_WD_Nfr7hVs-wMixtTDRgJPZUN6g1KA_zQ7lImL4YrU%253D%26openid.mode%3Dcheckid_setup%26isMASDK%3Dfalse%3Fopenid.ns%3Dhttp%253A%252F%252Fspecs.openid.net%252Fauth%252F2.0%26openid.claimed_id%3Dhttp%253A%252F%252Fspecs.openid.net%252Fauth%252F2.0%252Fidentifier_select%26openid.identity%3Dhttp%253A%252F%252Fspecs.openid.net%252Fauth%252F2.0%252Fidentifier_select%26openid.return_to%3Dhttps%253A%252F%252Feu.account.battle.net%252Flogin%252Fsignin%252Fsteam%253Fstate%253DAYUDjGqKtlrjiCypPf9NY9aY4VxbxXR6bCcwjMNEt8fNK8BR2i4ytq4pLkfN9O7hI8z_a__W1fHVOy6A4wdbxDbpT48eurFtI8FjXNeF_h4QvvzB6DJ1i5M5grjKgrifWFmZy2EGuwyOTnQePgo9omwNhydwwUn9CNR50AtaBawfTtoFkoEHoJEla-ov-HJX4lbPmLs2A0eu38-t42zrHAuKMzKo45GX6hlVoMa9vSzI_WD_Nfr7hVs-wMixtTDRgJPZUN6g1KA_zQ7lImL4YrU%253D%26openid.realm%3Dhttps%253A%252F%252Feu.account.battle.net%252Flogin%252Fsignin%252Fsteam%253Fstate%253DAYUDjGqKtlrjiCypPf9NY9aY4VxbxXR6bCcwjMNEt8fNK8BR2i4ytq4pLkfN9O7hI8z_a__W1fHVOy6A4wdbxDbpT48eurFtI8FjXNeF_h4QvvzB6DJ1i5M5grjKgrifWFmZy2EGuwyOTnQePgo9omwNhydwwUn9CNR50AtaBawfTtoFkoEHoJEla-ov-HJX4lbPmLs2A0eu38-t42zrHAuKMzKo45GX6hlVoMa9vSzI_WD_Nfr7hVs-wMixtTDRgJPZUN6g1KA_zQ7lImL4YrU%253D%26openid.mode%3Dcheckid_setup">
+                <button class="steam">
+                    <img src="images/steam-logo-black-transparent.png" alt="" height="18px" width="18px">
+                </button>
+            </a>
+        </div>
+
+
+    </div>
+    <div class="string">
+        <div class="line1"></div>
+        <div class="entry"><p><b>или войти через</b></p></div>
+        <div class="line2"></div>
+    </div>
+    <div class="register">
+        <div class="email"><input type="text" value="Электронная почта или телефон"></div>
+        <div class="password"><input type="text" value="Пароль"></div>
+    </div>
+   
+    <div class="abutton">
+        <input type="submit" value="Авторизоваться">
+    </div>
+    <div class="reg">
+        <a href="https://account.battle.net/creation/?theme=bnet-next&flowTrackingId=35fe334a-a121-4720-8893-2a17369c9a05&bdp=c2c8708b2420327727cafbf4027be8aaab1925c77833250848b59c78ceddf6be"> Зарегистрируйте учетную запись Battle.net бесплатно</a>
+    </div>
+
+    
+
+</body>
+<style>
+    body{
+        display: flex;
+        background-color: rgb(21 23 30);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: "Object Sans", "Arial", "Helvetica", "Segoe UI Symbol", "Segoe MDL2 Assets", sans-serif;
+    }
+    .box{
+        padding-top: 24px;
+    }
+    .autorizator {
+        font-size: 32px;
+        color: white;
+    }
+    .bn-logo {
+        
+        padding-left: 8px;
+    }
+    .grid1{
+        display: flex;
+        margin-left: 36px;
+        margin-right: 36px;
+        padding-top: 15px;
+        justify-content: space-between;
+
+    }
+    .google{
+        height: 48px;
+        width: 48px;
+        border-radius: 4px;
+        border-color: transparent;
+
+    }
+    .facebook{
+        
+        height: 48px;
+        width: 48px;
+        border-radius: 4px;
+        background-color: #1877F2;
+        border-color: transparent;
+    }
+    .apple{
+        height: 48px;
+        width: 48px;
+        border-radius: 4px;
+        border-color: transparent;
+        
+    }
+    .grid2{
+        display: flex;
+        margin-top: 24px;
+        justify-content: space-between;
+
+    }
+    .xbox {
+        height: 48px;
+        width: 48px;
+        border-radius: 4px;
+        background-color: #107c10;
+        border-color: transparent;
+    }
+    .playstation {
+        height: 48px;
+        width: 48px;
+        border-radius: 4px;
+        background-color: #1877F2;
+        border-color: transparent;
+    }
+    .switch {
+        height: 48px;
+        width: 48px;
+        border-radius: 4px;
+        background-color: #e60012;
+        border-color: transparent;
+    }
+    .steam {
+        height: 48px;
+        width: 48px;
+        border-radius: 4px;
+        background-color: white;
+        border-color: transparent;
+    }
+    
+   
+        .string{
+            padding-top: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .line1{
+            width: 131px;
+            height: 1px;
+            background-color: #3f4147;
+            margin-right: 20px;
+            
+            
+        }
+        .line2{
+            width: 131px;
+            height: 1px;
+            background-color: #3f4147;
+            margin-left: 20px
+            
+        }
+        .entry{
+           font-size: 14px ;
+           font-weight: 700;
+           color: #a1a2a5;
+        }
+        .email input[type="text"]{
+            margin-top: 16px;
+            border: none;
+            outline: none;
+            border: 1px solid #6b6c70;
+            box-shadow: none;
+            height: 40px;
+            width: 416px;
+            border-radius: 4px;
+            background-color: transparent;
+            color: #8c8b90;
+            font-size: 16px;
+            font-weight: 400;
+            box-sizing: border-box;
+            padding-left: 12px;
+            
+        }
+        .password input[type="text"]{
+            margin-top: 16px;
+            border: none;
+            outline: none;
+            border: 1px solid #6b6c70;
+            box-shadow: none;
+            height: 40px;
+            width: 416px;
+            border-radius: 4px;
+            background-color: transparent;
+            color: #8c8b90;
+            font-size: 16px;
+            font-weight: 400;
+            box-sizing: border-box;
+            padding-left: 12px;
+            margin-bottom: 36px;
+            
+        }
+        .abutton input[type="submit"] {
+            display: flex;
+            width: 416px;
+            height: 40px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            background-color: #0074e0;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .reg {
+            margin-top: 46px;
+            font-weight: 700;
+            width: 416px;
+            justify-content: center;
+            
+           
+        }
+ 
+</style>
+</html>
